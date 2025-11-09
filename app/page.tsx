@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -62,5 +62,26 @@ export default function Home() {
         </div>
       </main>
     </div>
+  );
+}
+ */
+
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Screenshots from './components/Screenshots';
+import Features from './components/Features';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
+
+export default function Home() {
+  return (
+    <main>
+      <Header />
+      <Hero />
+      <Screenshots />
+      <Features />
+      <CTA />
+      <Footer />
+    </main>
   );
 }
