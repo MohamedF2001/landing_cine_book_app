@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   title: 'CinéBook - Application de réservation de tickets de cinéma',
   description: 'Réservez vos films préférés en un clic avec CinéBook',
   icons: {
-    icon: "images/cinema.png",
+    icon: "/cinema.png",
   },
 };
 
