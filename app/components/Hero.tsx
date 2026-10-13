@@ -45,6 +45,7 @@ export default function Hero() {
 
 import React from 'react';
 import { Download } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
@@ -63,24 +64,19 @@ const Hero: React.FC = () => {
             className="btn-hero animate-slideUp"
           >
             <Download size={20} />
-            Télécharger le .apk
+            Télécharger l&apos;application
           </a>
         </div>
+
         <div className="hero-mockup animate-zoomIn">
-          <div className="mockup-phone">
-            <div className="mockup-screen">
-              <img src="/images/screen1.jpg" alt="Header" width={290} height={630} />
-              {/* <div className="mockup-content">
-                <div className="mockup-header">
-                  <img src="/images/header.png" alt="Header" width={100} height={100} />
-                </div>
-                <div className="mockup-movies">
-                  <div className="movie-card">movie 1</div>
-                  <div className="movie-card">movie 2</div>
-                </div>
-              </div> */}
-            </div>
-          </div>
+          <Image
+            src="/images/maquette.png"
+            alt="Aperçu de l’application CinéBook"
+            width={700}
+            height={900}
+            className="hero-maquette"
+            priority
+          />
         </div>
       </div>
     </section>

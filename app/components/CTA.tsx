@@ -51,7 +51,7 @@ const CTA: React.FC = () => {
             className="btn-cta"
           >
             <Download size={24} />
-            Télécharger l&apos;app .apk
+            Télécharger l&apos;application
             <ChevronRight size={24} />
           </a>
         </div>
